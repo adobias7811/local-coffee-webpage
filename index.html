@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee is Life</title>
+    <style>
+      .container {
+        display: block;
+        border-radius: 4px;
+        max-width: 800px;
+        padding: 15px 25px;
+        margin: 0 auto;
+        background: linear-gradient(
+          111.5deg,
+          rgb(228, 247, 255) 21.9%,
+          rgb(255, 216, 194) 92.2%
+        );
+
+      }
+      h1 {
+        text-align: center;
+        color: #272144;
+        padding: 10px;
+        margin: 0px:
+        font-size: 36px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        line-height: 1.5;
+      }
+      .latte {
+        display: block;
+        margin: 0 auto;
+        border-radius: 20px;
+        padding: 10px;
+      }
+      h2 {
+        text-align: center;
+        color: #272144;
+        font-size: 24px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      p {
+        text-align: center;
+        color: #272144;
+        font-size: 16px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .local-coffee {
+        display: block;
+        color: #21657e;
+        text-decoration-line: none;
+      }
+      a:hover {
+        text-decoration-line: underline;
+        font-weight: bold;
+      }
+      .iced-coffee {
+        display: block;
+        margin: 0 auto;
+        border-radius: 20px;
+        padding: 20px;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 14px;
+        padding: 10px;
+        margin-bottom: 20px;
+        color: white;
+        background-color: #f0b692;
+        border: thin;
+        border-color: white;
+        box-shadow: 3px 3px 3px grey;
+      }
+      .coffee-button:hover {
+        background-color: #678996;
+        transition: 200ms;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Life is too short to drink bad coffee ☕️</h1>
+      <img
+        src="https://images.unsplash.com/photo-1541167760496-1628856ab772?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1788&q=80"
+        alt="Latte art"
+        width="80%;"
+        class="latte"
+      />
+      <p>
+        If you’re reading this, it means you’re looking to learn more about
+        coffee & maybe step outside of your current coffee comfort zone. I’m so
+        happy you’re taking the steps to drink amazing coffee because it’s
+        genuinely one of my favorite rituals. Whether you brew coffee at home
+        using high-quality coffee or head to a local coffee shop, you might be
+        shocked by how
+        <strong>flavorful and YUMMY</strong> coffee can be.
+      </p>
+      <hr />
+      <h2>Drink Local</h2>
+      <p>
+        Trying to find new delicious coffees to enjoy can feel pretty
+        overwhelming at first -
+        <em
+          >where do you start, what roast is best for each style of drink, what
+          even is a macchiato anyways?</em
+        >
+        Once you dive in, you'll start to uncover your personal coffee style &
+        trying new coffees might become your favorite morning ritual too!
+        <br /><br />
+        I highly recommend you check out any local coffee shops that roast their
+        own coffee in your neighborhood. Chat with the baristas or roaster about
+        what they recommend based on your preferences. There’s a high likelihood
+        they’ll let you try different beans and blends so that you can find
+        something you really enjoy.
+        <span
+          ><a
+            href="https://www.google.com/maps/search/coffee+shop+near+me/@24.5926665,-81.782588,11z/data=!3m1!4b1"
+            target="_blank"
+            class="local-coffee"
+            >Find a local coffee shop near you!</a
+          ></span
+        >
+      </p>
+
+      <img
+        src="https://blog.cafecampesino.com/wp-content/uploads/coconut-iced-latte.jpg"
+        alt="Iced coffee"
+        width="80%"
+        class="iced-coffee"
+      />
+      <button class="coffee-button">Get a New ☕️ Drink Inspiration</button>
+    </div>
+    <script>
+      function recommendCoffee() {
+        let name = prompt("What is your first name?");
+        let temperature = prompt("What is the temperature outside today?");
+        if (temperature >= 60) {
+          alert(
+            "Hi " +
+              name +
+              "! You should try an iced white chocolate mocha ☕️ Happy sipping!"
+          );
+        } else {
+          alert(
+            "Hi " +
+              name +
+              "! You should try an oatmilk cortado ☕️ Happy sipping!"
+          );
+        }
+      }
+      let coffeeButton = document.querySelector("button");
+      coffeeButton.addEventListener("click", recommendCoffee);
+    </script>
+  </body>
+</html>
